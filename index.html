@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Donor Registration</title>
+  <link rel="stylesheet" href="doner.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Register to Donate Blood</h1>
+    <form id="donor-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" min="18" max="65" required>
+
+      <label for="blood_type">Blood Type</label>
+      <select id="blood_type" name="blood_type" required>
+        <option value="">-- Select Blood Type --</option>
+        <option value="A+">A+</option>
+        <option value="A-">A-</option>
+        <option value="B+">B+</option>
+        <option value="B-">B-</option>
+        <option value="O+">O+</option>
+        <option value="O-">O-</option>
+        <option value="AB+">AB+</option>
+        <option value="AB-">AB-</option>
+      </select>
+
+      <label for="contact_info">Contact Info (Email)</label>
+      <input type="email" id="contact_info" name="contact_info" required>
+
+      <button type="submit">Register</button>
+    </form>
+    <p id="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
